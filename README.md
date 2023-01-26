@@ -4,7 +4,7 @@ A Fusion 360 script that import spline from any CSV file.
 It reads data from a CSV file and creates a spline in a sketch. It supports:
 
 - two colunms and three columns data
-- numbers with a comma as the decimal seperator
+- numbers with a comma as the decimal separator
 - any kind of separator between values
 - automatic text header skipping
 
@@ -25,7 +25,7 @@ This script is inspired by the "ImportSplineCSV" script from Autodesk. Some user
 
 # Support
 
-Report issue, ask question or suggest new feature in this thread on the Autodesk Fusion 360 forum: [Import spline from any CSV file]()
+Report issue, ask question or suggest new feature in this thread on the Autodesk Fusion 360 forum: [Import spline from any CSV file](https://forums.autodesk.com/t5/fusion-360-api-and-scripts/script-importsplineanycsv/m-p/11708665)
 
 Don't forget to attach the CSV file you try to import.
 
