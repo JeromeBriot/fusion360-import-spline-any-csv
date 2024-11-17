@@ -30,6 +30,9 @@ Report issue, ask question or suggest new feature in this thread on the Autodesk
 Don't forget to attach the CSV file you try to import.
 
 # Version history
+- Version 1.1.0 - November 2024
+  - Fix unique separator in CSV file reading.
+  
 - Version 1.0.0 - January 2023
   - First release.
 
