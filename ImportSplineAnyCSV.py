@@ -41,7 +41,7 @@ def run(context):
                 separators = [x for x in line if x not in ['+', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'E', 'e', 'D', 'd']]
 
                 # If only one separator then no decimal separator (e.g. line contains 5,0)
-                if len(separators) == 1:
+                if all([x == separators[0] for x in separators]):
                     valueSep = separators[0]
                     decimalSep = ''
                 else:
