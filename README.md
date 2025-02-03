@@ -9,11 +9,11 @@ It reads data from a CSV file and creates a spline in a sketch. It supports:
 - automatic text header skipping
 
 Since the version 1.2.0, it is possible to import multiple splines from one CSV file by separate them with empty lines.
-You have to edit the file ImportSplineAnyCSV.py with a text editor and set the TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR to True:
+You have to edit the file ImportSplineAnyCSV.py with a text editor and set the TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR variable to True:
 
 ```TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR = True```
 
-If you want to import data as one spline only, you have to set the TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR to False:
+If you want to import data as one spline only, you have to set the TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR variable to False:
 
 ```TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR = False```
 
@@ -42,6 +42,7 @@ Don't forget to attach the CSV file you try to import.
 
 - Version 1.2.0 - February 2025
   - Add feature to import multiple splines from one CSV file
+  - Add examples
 
 - Version 1.1.0 - November 2024
   - Fix unique separator in CSV file reading.
