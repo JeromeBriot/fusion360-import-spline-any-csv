@@ -40,6 +40,9 @@ Don't forget to attach the CSV file you try to import.
 
 # Version history
 
+- Version 1.3.0 - February 2025
+  - Treat line in CSV file as empty if less than 3 characters
+
 - Version 1.2.0 - February 2025
   - Add feature to import multiple splines from one CSV file
   - Add examples
@@ -49,7 +52,6 @@ Don't forget to attach the CSV file you try to import.
   
 - Version 1.0.0 - January 2023
   - First release.
-
 
 # Licence
 See the license.txt

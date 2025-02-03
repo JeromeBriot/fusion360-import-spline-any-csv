@@ -43,7 +43,7 @@ def run(context):
 
                 line = line.rstrip()
 
-                if line == '':
+                if line == '' or len(line) < 3:
 
                     if TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR:
 
