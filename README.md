@@ -40,6 +40,9 @@ Don't forget to attach the CSV file you try to import.
 
 # Version history
 
+- Version 1.4.0 - February 2025
+	- Add option to import multiple splines into one single sketch
+
 - Version 1.3.0 - February 2025
   - Treat line in CSV file as empty if less than 3 characters
 

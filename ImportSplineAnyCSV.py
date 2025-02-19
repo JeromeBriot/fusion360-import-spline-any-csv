@@ -1,6 +1,6 @@
 #Author-Jerome Briot (inpired by the ImportSplineCSV script from Autodesk)
 #Description-Import spline from any CSV file
-#Version-1.2.0
+#Version-1.4.0
 
 import adsk.core, adsk.fusion, traceback
 import io
@@ -8,6 +8,8 @@ import io
 VERBOSE = True
 
 TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR = True
+
+ONE_SKETCH_PER_SPLINE = False
 
 def run(context):
     ui = None
@@ -101,10 +103,16 @@ def run(context):
         if len(splines[-1]) == 0:
             splines.pop()
 
-        for spline in splines:
-            if len(spline) > 0:
-                sketch = root.sketches.add(root.xYConstructionPlane)
-                sketch.sketchCurves.sketchFittedSplines.add(spline)
+        if ONE_SKETCH_PER_SPLINE:
+            for spline in splines:
+                if len(spline) > 0:
+                    sketch = root.sketches.add(root.xYConstructionPlane)
+                    sketch.sketchCurves.sketchFittedSplines.add(spline)
+        else:
+            sketch = root.sketches.add(root.xYConstructionPlane)
+            for spline in splines:
+                if len(spline) > 0:                    
+                    sketch.sketchCurves.sketchFittedSplines.add(spline)
 
         if VERBOSE:
 
