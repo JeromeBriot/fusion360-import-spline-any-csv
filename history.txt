@@ -1,5 +1,5 @@
 Version 1.4.0 - February 2025
-	Add option to import multiple splines into one single sketch
+	Add option to import multiple splines in a single sketch
 	
 Version 1.3.0 - February 2025
 	Treat line in CSV file as empty if less than 3 characters
