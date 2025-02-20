@@ -17,13 +17,13 @@ If you want to import data as one spline only, you have to set the TREAT_EMPTY_L
 
 ```TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR = False```
 
-There is also an option to create the splines in a single sketch by setting the following variable to True:
-
-```ONE_SKETCH_PER_SPLINE = True```
-
-If the variable is set to False, each spline is created in its own sketch:
+There is also an option to create the splines in a single sketch by setting the following variable to False:
 
 ```ONE_SKETCH_PER_SPLINE = False```
+
+If the variable is set to True, each spline is created in its own sketch:
+
+```ONE_SKETCH_PER_SPLINE = True```
 
 # Installation
 Use the free [GitHubToFusion360](https://apps.autodesk.com/FUSION/en/Detail/Index?id=789800822168335025&os=Win64) add-in to install this script in Fusion 360.
