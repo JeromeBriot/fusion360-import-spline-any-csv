@@ -25,6 +25,10 @@ If the variable is set to True, each spline is created in its own sketch:
 
 ```ONE_SKETCH_PER_SPLINE = True```
 
+Since version 1.5.0, it is possible to scale the input data by modifying the SCALE_FACTOR variable:
+
+```SCALE_FACTOR = 1.0```
+
 # Installation
 Use the free [GitHubToFusion360](https://apps.autodesk.com/FUSION/en/Detail/Index?id=789800822168335025&os=Win64) add-in to install this script in Fusion 360.
 
@@ -47,6 +51,9 @@ Report issue, ask question or suggest new feature in this thread on the Autodesk
 Don't forget to attach the CSV file you try to import.
 
 # Version history
+
+- Version 1.5.0 - March 2025
+	- Add scale factor feature
 
 - Version 1.4.0 - February 2025
 	- Add option to import multiple splines in a single sketch

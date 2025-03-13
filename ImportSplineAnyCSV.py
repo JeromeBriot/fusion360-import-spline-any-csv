@@ -1,6 +1,6 @@
 #Author-Jerome Briot (inpired by the ImportSplineCSV script from Autodesk)
 #Description-Import spline from any CSV file
-#Version-1.4.0
+#Version-1.5.0
 
 import adsk.core, adsk.fusion, traceback
 import io
@@ -10,6 +10,8 @@ VERBOSE = True
 TREAT_EMPTY_LINES_AS_SPLINES_SEPARATOR = True
 
 ONE_SKETCH_PER_SPLINE = False
+
+SCALE_FACTOR = 1.0
 
 def run(context):
     ui = None
@@ -90,7 +92,7 @@ def run(context):
 
                     for pntStr in pntStrArr:
                         try:
-                            data.append(float(pntStr))
+                            data.append(float(pntStr) * SCALE_FACTOR)
                         except:
                             break
 

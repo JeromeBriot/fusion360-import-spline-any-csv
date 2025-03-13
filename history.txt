@@ -1,3 +1,6 @@
+Version 1.5.0 - March 2025
+	Add scale factor feature
+
 Version 1.4.0 - February 2025
 	Add option to import multiple splines in a single sketch
 	
